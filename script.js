@@ -1,5 +1,8 @@
 const userInput = document.querySelector("#user-input")
 const passwordInput = document.querySelector("#password-input")
+const remember = document.querySelector("#remember")
+
+const ls = localStorage
 
 let contas = [
     {
@@ -10,8 +13,25 @@ let contas = [
         user: "teste",
         password: 12345,
     },
-    {},
+    {
+        user: "gustavo",
+        password: 123456,
+    },
 ]
+
+function loadStorage(){
+    if (ls.getItem("user") != null) {
+        let data = JSON.parse(ls.getItem("user"))
+        userInput.value = data[0]
+        passwordInput.value = data[1]
+    }
+}
+function setStorage(){
+    let user = []
+    user[0] = userInput.value
+    user[1] = passwordInput.value
+    ls.setItem("user", JSON.stringify(user))
+}
 
 function getInputValues(){
     let result = {
@@ -30,17 +50,26 @@ function login({user, password}){
     while(i < contas.length){
         if (user == contas[i].user){
             loginState[0] = true
-        }else if(password == contas[i].password){
-            loginState[1] = true
+            if (password == contas[i].password) {
+                loginState[1] = true
+            }
         }
         i++
     }
-    if (loginState[0] == true && loginState[1] == true) {
-        window.location.href = "loggedIndex.html"
-    }else if(loginState[0] == true && loginState[1] == false){
-        window.alert("Senha Incorreta")
-    }else if(loginState[0] == false){
-        window.alert("Usuario não encontrado")
+
+    if (remember.checked == true) {
+        setStorage()
     }
+
+    if (loginState[0] == false){
+        window.alert("Usuário não encontrado")
+    }else if(loginState[0] == true && loginState[1] == false){
+        window.alert("Senha incorreta")
+    }else if(loginState[0] == true && loginState[1] == true){
+        window.location.href = "./loggedindex.html"
+    }
+
     return loginState
 }
+
+loadStorage()
