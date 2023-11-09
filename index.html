@@ -19,14 +19,14 @@
             </div>
             
 
-            <div id="inputs">
+            <div id="input-box">
                 <div class="single-input">
                     <h2>Usuário</h2>
-                    <input type="text" class="login-input">    
+                    <input type="text" id="user-input" class="inputs">    
                 </div>
                 <div class="single-input">
                     <h2>Senha</h2>   
-                    <input type="text" class="login-input">    
+                    <input type="text" id="password-input" class="inputs">    
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
             </div>
 
             <div id="login-button-box">
-                <button id="login-button">Entrar</button>       
+                <button id="login-button" onclick="login(getInputValues())">Entrar</button>       
             </div>
 
         </div>

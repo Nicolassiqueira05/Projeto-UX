@@ -64,7 +64,7 @@ span{
 #title-box{
     height: 100px;
 }
-#inputs{
+#input-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,7 +97,7 @@ span{
 .single-input{
     height: 120px;
 }
-.login-input{
+.inputs{
     height: 44px;
     width: 328px;
 }
