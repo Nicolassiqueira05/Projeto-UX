@@ -1,109 +1,225 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
+
+@media screen and (min-width: 1250px) {
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    input::placeholder{
+        color: white;
+    }
+    
+    h1{
+        font-weight: 700;
+        font-size: 48px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    span{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+    #logo{
+        height: 90vh;
+        width: 35vw;
+        border-right: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #fortes-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-160px);
+    }
+    
+    #fortes-desc{
+        height: 101px;
+        width: 338px;
+    }
+    #fortes-logo{
+        height: 149px;
+        width: 493px;
+    }
+    
+    #login{
+        height: 90vh;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #login-box{
+        height: 500px;
+        width: 328px;
+        transform:translateY(-80px);    
+    }
+    #title-box{
+        height: 100px;
+    }
+    #input-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #extra-inputs{
+        width: 328px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #login-button-box{
+        height: 60px;
+        width: 328px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login-button{
+        height: 29px;
+        width: 111px;
+        border: 1px;
+        border-radius: 4px;
+        background-color: #7AA7FF;
+    }
+    #login-button:hover{
+        background-color: #6597fc;
+    }
+    #login-button:active{
+        border: 1px solid black;
+    }
+    .single-input{
+        height: 120px;
+    }
+    .inputs{
+        height: 44px;
+        width: 328px;
+    }
 }
 
-h1{
-    font-weight: 700;
-    font-size: 48px;
-}
-h2{
-    font-weight: 400;
-    font-size: 16px;
-}
-span{
-    font-weight: 300;
-    font-size: 16px;
-}
 
-#logo{
-    height: 90vh;
-    width: 35vw;
-    border-right: 5px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#fortes-box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-160px);
-}
-
-#fortes-desc{
-    height: 101px;
-    width: 338px;
-}
-#fortes-logo{
-    height: 149px;
-    width: 493px;
-}
-
-#login{
-    height: 90vh;
-    width: 65vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#login-box{
-    height: 500px;
-    width: 328px;
-    transform:translateY(-80px);    
-}
-#title-box{
-    height: 100px;
-}
-#input-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#extra-inputs{
-    width: 328px;
-    display: flex;
-    justify-content: space-between;
-}
-#login-button-box{
-    height: 60px;
-    width: 328px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#login-button{
-    height: 29px;
-    width: 111px;
-    border: 1px;
-    border-radius: 4px;
-    background-color: #7AA7FF;
-}
-#login-button:hover{
-    background-color: #6597fc;
-}
-#login-button:active{
-    border: 1px solid black;
-}
-.single-input{
-    height: 120px;
-}
-.inputs{
-    height: 44px;
-    width: 328px;
-}
 
 @media screen and (max-width: 1410px) {
     #fortes-logo{
         width: auto;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    html{
+        height: 100vh;
+        width: 100vw;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 48px;
+    }
+    h2{
+        display: none;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    span{
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    #logo{
+        height: 200px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fortes-desc{
+        display: none;
+    }
+
+    #fortes-box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #login{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #login-box{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform:translateY(-80px);    
+    }
+    #title-box{
+        display: none;
+        height: 100px;
+    }
+    #input-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #extra-inputs{
+        width: 328px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #login-button-box{
+        height: 120px;
+        width: 328px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login-button{
+        height: 50px;
+        width: 200px;
+        border: 1px;
+        border-radius: 4px;
+        background-color: #7AA7FF;
+    }
+    #login-button:hover{
+        background-color: #6597fc;
+    }
+    #login-button:active{
+        border: 1px solid black;
+    }
+    .single-input{
+        height: 120px;
+    }
+    .inputs{
+        height: 60px;
+        width: 328px;
     }
 }
