@@ -66,7 +66,7 @@ function login({user, password}){
     }else if(loginState[0] == true && loginState[1] == false){
         window.alert("Senha incorreta")
     }else if(loginState[0] == true && loginState[1] == true){
-        window.location.href = "./loggedindex.html"
+        window.location.href = "./dashboard.html"
     }
 
     return loginState
