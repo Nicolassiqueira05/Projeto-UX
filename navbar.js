@@ -20,7 +20,6 @@ function autoOpen(){
 function autoClose() {
     navbar.style.diplay = "none"
 }
-
 openBtn.addEventListener("click", open, false)
 closeBtn.addEventListener("click", close, false)
 addEventListener("resize", (event) =>{event.target.innerWidth >= 1500 ? autoOpen() : null}, false)
