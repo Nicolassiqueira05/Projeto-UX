@@ -1,0 +1,208 @@
+@media screen and (min-width: 901px) {
+    #pedidos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #menu{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    #cart{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+    #products{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 28%;
+        text-align: center;
+    }
+    .product-image{
+        height: 100px;
+        width: 100px;
+    }
+    .product-name{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    #cart-items{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    #cart-list{
+        height: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .list-item{
+        font-size: 20px;
+        margin: 10px;
+    }
+    #cart-buttons{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-button{
+        height: 60px;
+        width: 150px ;   
+        border: 0;
+        border-radius: 10px;
+        color: white;
+    }
+    #cancelBtn{
+        background-color: #F23E3E;
+    }
+    #confirmBtn{
+        background-color: #50D434;
+    }
+    #cancelBtn:hover{
+        background-color: #da1b1b;
+    }
+    #confirmBtn:hover{
+        background-color: #3bc520;
+    }
+    #checked{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #checked-icon{
+        width:120px;
+        height: 120px;
+    }
+    #checked-text{
+        font-size: 48px;
+        font-weight: bold;
+        color: #55C000;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    #pedidos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #menu{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    #cart{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+    #products{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 28%;
+        text-align: center;
+    }
+    .product-image{
+        height: 100px;
+        width: 100px;
+    }
+    .product-name{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    #cart-items{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    #cart-list{
+        height: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .list-item{
+        font-size: 20px;
+        margin: 10px;
+    }
+    #cart-buttons{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-button{
+        height: 60px;
+        width: 150px ;   
+        border: 0;
+        border-radius: 10px;
+        color: white;
+    }
+    #cancelBtn{
+        background-color: #F23E3E;
+    }
+    #confirmBtn{
+        background-color: #50D434;
+    }
+    #cancelBtn:hover{
+        background-color: #da1b1b;
+    }
+    #confirmBtn:hover{
+        background-color: #3bc520;
+    }
+    #checked{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        transform: translateY(100%);
+    }
+    #checked-icon{
+        width:120px;
+        height: 120px;
+    }
+    #checked-text{
+        font-size: 48px;
+        font-weight: bold;
+        color: #55C000;
+        text-align: center;
+    }
+    
+}

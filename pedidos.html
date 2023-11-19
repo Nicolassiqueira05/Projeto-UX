@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="pedidos.css">
+    <title>Pedidos</title>
+</head>
+<body>
+    <div id="upbar">
+        <div id="img-box">
+            <img id="logo" src="img/Logo.png" alt="">
+        </div>
+        <div id="exit-box">
+            <h1 id="title">Pedidos</h1>
+            <a href="index.html" id="quit">
+                <img id="logout"src="img/Logout.png"></img>
+                <span>Sair</span>
+            </a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="nav-screen">
+            <div id="perfil">
+                <img id="perfil-img" src="" alt="">
+                <h1 id="name">Nome de Usuário</h1>
+            </div>
+            <ul id="nav-itens">
+                <button id="closeNav"><div class="backImg"></div></button>
+                <li class="nav-item"><a href="dashboard.html" class="nav-links">Dashboard</a></li>
+                <li class="nav-item"><a href="pedidos.html" class="nav-links">Pedidos</a></li>
+                <li class="nav-item"><a href="usuario.html" class="nav-links">Usuário</a></li>
+                <li class="nav-item"><a href="estatisticas.html" class="nav-links">Estatisticas</a></li>
+                <li class="nav-item"><a href="nutricionista.html" class="nav-links">Nutricionista</a></li>
+                <li class="nav-item"><a href="obras.html" class="nav-links">Obras</a></li>
+            </ul>
+            <div id="mob-logout-box">
+                <a href="index.html" id="mob-quit">
+                    <img id="mob-logout"src="img/Logout.png"></img>
+                </a>
+            </div>
+        </div>
+    <div id="content-screen">
+        <button id="openNav">
+            <div class="backImg"></div>
+        </button>
+        <div id="content-main">
+            <div id="pedidos">
+                <div id="menu">
+                    <h1>Cardápio</h1>
+                    <div id="products">
+                        <div onclick="handleAdd('salada')" class="product">
+                            <img class="product-image" src="" alt="">
+                            <h2 class="product-name">Salada</h2>
+                        </div>
+                        <div onclick="handleAdd('feijao')" class="product">
+                            <img class="product-image" src="" alt="">
+                            <h2 class="product-name">Feijão</h2>
+                        </div>
+                        <div onclick="handleAdd('suco')" class="product">
+                            <img class="product-image" src="" alt="">
+                            <h2 class="product-name">Suco de laranja</h2>
+                        </div>
+                        <div onclick="handleAdd('arroz')" class="product">
+                            <img class="product-image" src="" alt="">
+                            <h2 class="product-name">Arroz</h2>
+                        </div>
+                        <div onclick="handleAdd('macarrao')" class="product">
+                            <img class="product-image" src="" alt="">
+                            <h2 class="product-name">Macarrão</h2>
+                        </div>
+                        <div onclick="handleAdd('coca')" class="product">
+                            <img class="product-image" src="" alt="">
+                            <h2 class="product-name">Coca Cola</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart">
+                    <h1>Sacola de compras</h1>
+                    <div id="cart-itens">
+                            <ul id="cart-list">
+    
+                            </ul>
+                    </div>
+                    <div id="cart-buttons">
+                        <button id="cancelBtn" class="cart-button" onclick="handleCancel()">Cancelar</button>
+                        <button id="confirmBtn" class="cart-button" onclick="handleConfirm()">Confirmar
+                        </button>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        
+    </div>    
+    </div>
+    <script src="navbar.js"></script>
+    <script src="pedidos.js"></script>
+</body>
+</html>
