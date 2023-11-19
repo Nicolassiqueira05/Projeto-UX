@@ -76,10 +76,13 @@
         font-weight: 500;
         color: black;
     }
+    #img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #logo{
-        height: 10vh;
         width: 15vw;
-        mix-blend-mode: multiply;
     }
     #openNav{
         display: none;

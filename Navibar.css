@@ -63,9 +63,7 @@
         color: black;
     }
     #logo{
-        height: 10vh;
         width: 15vw;
-        mix-blend-mode: multiply;
     }
     #openNav{
         display: none;
