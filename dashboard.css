@@ -1,0 +1,103 @@
+@media screen and (min-width: 1500px) {
+    #dashboard{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #basic-chart-box{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .chart{
+        height: 300px;
+        width: 360px;
+        border: 1px solid rgb(180, 180, 180);
+        border-radius: 10px;
+    }
+    #advanced-chart-box{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #pie-chart-box-container{
+        height: 400px;
+        width: 720px;
+    }
+    #pie-chart-box{
+        height: 380px;
+        width: 600px;
+        border: 1px solid rgb(190, 190, 190);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #leaderboard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    #chart-title{
+        width: 70%;
+        text-align: center;
+    }
+    #worker-list{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 1499px) {
+    #dashboard{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #basic-chart-box{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: initial;
+        flex-wrap: wrap;
+    }
+    .chart{
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 10px;
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #advanced-chart-box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #leaderboard{
+        display: none;
+    }
+    #pie-chart-box{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .chart{
+        flex-basis: 150px;
+        flex-grow: 0;
+        margin: auto;
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
             </div>
             <ul id="nav-itens">
                 <button id="closeNav"><div class="backImg"></div></button>
-                <li class="nav-item"><a href="dashboard.html" class="nav-links">Dashboard</a></li>
+                <li class="nav-item" id="current-item"><a href="dashboard.html" class="nav-links">Dashboard</a></li>
                 <li class="nav-item"><a href="pedidos.html" class="nav-links">Pedidos</a></li>
                 <li class="nav-item"><a href="usuario.html" class="nav-links">Usuário</a></li>
                 <li class="nav-item"><a href="estatisticas.html" class="nav-links">Estatisticas</a></li>
@@ -44,9 +45,36 @@
         <button id="openNav">
             <div class="backImg"></div>
         </button>
-        
+        <div id="dashboard">
+            <div id="basic-chart-box">
+                <div class="chart">
+                    <canvas id="geral-consum-chart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="geral-loss-chart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="geral-spends-chart"></canvas>
+                </div>
+            </div>
+            <div id="advanced-chart-box">
+                <div id="leaderboard" class="chart">
+                    <h2 id="chart-title">Funcionários com menos consumo</h2>
+                    <ol id="worker-list">
+                        <li class="worker-item">Rafael Santos - #15267</li>
+                        <li class="worker-item">G. Oliveira - #15275</li>
+                        <li class="worker-item">Matheus Lima - #15274</li>
+                    </ol>
+                </div>
+                    <div id="pie-chart-box">
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+            </div>
+        </div>
     </div>    
     </div>
     <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>

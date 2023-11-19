@@ -37,6 +37,11 @@
         padding: 0px;
         margin: 0px;
     }
+    #current-item{
+        width: calc(100% - 4px);
+        background-color: #F4F4F4;
+        border-left: 4px solid #00CC95;
+    }
     #content-screen{
         width: 85vw;
         display: flex;
