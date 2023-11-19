@@ -227,6 +227,9 @@
         justify-content: start;
         align-items: center;
     }
+    #mob-logout{
+        width: 60px;
+    }
     #content-screen{
         width: 100vw;
         display: flex;
@@ -347,6 +350,9 @@
         display: flex;
         justify-content: start;
         align-items: center;
+    }
+    #mob-logout{
+        width: 55px;
     }
     #content-screen{
         position: fixed;

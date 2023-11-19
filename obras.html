@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="obras.css">
     <title>Obras</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
             </ul>
             <div id="mob-logout-box">
                 <a href="index.html" id="mob-quit">
-                    <img id="mob-logout"src="img/Logout.png"></img>
+                    <img id="mob-logout"src="img/LogoutBlack.png"></img>
                 </a>
             </div>
         </div>
@@ -44,7 +45,30 @@
         <button id="openNav">
             <div class="backImg"></div>
         </button>
-        
+        <div id="jobs">
+            <div id="job-register-box" class="register">
+                <h1 class="register-title">Cadastrar Obra</h1>
+                <div class="register-box">
+                    <h2 class="register-text">Nome Obra</h2>
+                    <input type="text" class="register-input">
+                    <h2 class="register-text">ID Projeto</h2>
+                    <input type="text" class="register-input">
+                    <h2 class="register-text">Região</h2>
+                    <input type="text" class="register-input">
+                    <button class="register-button">Cadastrar</button>
+                </div>
+            </div>
+            <div id="worker-register-box" class="register">
+                <h1 class="register-title">Cadastrar Funcionário</h1>
+                <div class="register-box">
+                    <h2 class="register-text">ID Obra</h2>
+                    <input type="text" class="register-input">
+                    <h2 class="register-text">ID Funcionário</h2>
+                    <input type="text" class="register-input">
+                    <button class="register-button">Registrar</button>
+                </div>
+            </div>
+        </div>
     </div>    
     </div>
     <script src="navbar.js"></script>
