@@ -1,6 +1,8 @@
 let openBtn = document.querySelector("#openNav")
 let closeBtn = document.querySelector("#closeNav")
 let navbar = document.querySelector("#nav-screen")
+let userIcon = document.querySelector("#perfil-img")
+userIcon.src = "img/UserIcon.png"
 
 function open(){
     navbar.style.display = "flex";
@@ -26,3 +28,4 @@ function autoClose() {
 openBtn.addEventListener("click", open, false)
 closeBtn.addEventListener("click", close, false)
 addEventListener("resize", (event) =>{event.target.innerWidth >= 1500 ? autoOpen() : autoClose()}, false)
+

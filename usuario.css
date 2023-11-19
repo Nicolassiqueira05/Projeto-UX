@@ -9,7 +9,6 @@
         height: 200px;
         width: 200px;
         border-radius: 100px;
-        background-color: black;
     }
     #info{
         height: 250px;
@@ -39,7 +38,6 @@
     .codes{
         height: 180px;
         width: 180px;
-        border: 1px solid black;
     }
 }
 @media screen and (max-width: 900px){
@@ -52,7 +50,6 @@
     #user-img{
         height: 35vw;
         width: 35vw;
-        background-color: black;
     }
     #info{
         height: 224px;

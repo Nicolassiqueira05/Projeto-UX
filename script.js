@@ -7,16 +7,12 @@ const ls = localStorage
 let contas = [
     {
         user: "nicolas",
-        password: 12345,
+        password: "kaliu",
     },
     {
-        user: "teste",
-        password: 12345,
-    },
-    {
-        user: "gustavo",
-        password: 123456,
-    },
+        user: "caua",
+        password: "327",
+    }
 ]
 
 function loadStorage(){
