@@ -9,12 +9,15 @@ function addOrRemove(product){
         if (product === cartList[i]) {
             cartList.splice(i, 1)
             found = true
+            document.querySelector(`#${product}`).src = `img/Food/${product}.png`
             console.log("removed")
             break
         }
     }
     if (!found){
         cartList.push(product)
+        console.log(product)
+        document.querySelector(`#${product}`).src = `img/Food/${product}Remove.png`
     }
 }
 function printList() {

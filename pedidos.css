@@ -32,6 +32,7 @@
     }
     .product-image{
         height: 100px;
+        margin: 10px;
         width: 120px;
     }
     .product-name{
@@ -61,7 +62,7 @@
     #cart-buttons{
         width: 400px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .cart-button{
         height: 60px;
@@ -164,7 +165,7 @@
     #cart-buttons{
         width: 400px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .cart-button{
         height: 60px;
