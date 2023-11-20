@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="nutri.css">
     <title>Nutricionista</title>
 </head>
 <body>
@@ -44,7 +45,52 @@
         <button id="openNav">
             <div class="backImg"></div>
         </button>
-        
+        <div id="content-main">
+            <div id="pedidos">
+                <div id="menu">
+                    <h1>Cardápio</h1>
+                    <div id="products">
+                        <div class="product">
+                            <img class="product-image" src="img/Food/Salada.png" alt="">
+                            <h2 class="product-name">Salada</h2>
+                        </div>
+                        <div class="product">
+                            <img class="product-image" src="img/Food/Feijao.png" alt="">
+                            <h2 class="product-name">Feijão</h2>
+                        </div>
+                        <div class="product">
+                            <img class="product-image" src="img/Food/Suco.png" alt="">
+                            <h2 class="product-name">Suco de laranja</h2>
+                        </div>
+                        <div class="product">
+                            <img class="product-image" src="img/Food/Arroz.png" alt="">
+                            <h2 class="product-name">Arroz</h2>
+                        </div>
+                        <div class="product">
+                            <img class="product-image" src="img/Food/Macarrao.png" alt="">
+                            <h2 class="product-name">Macarrão</h2>
+                        </div>
+                        <div class="product">
+                            <img class="product-image" src="img/Food/Coca.png" alt="">
+                            <h2 class="product-name">Coca Cola</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="register">
+                    <h1>Registrar Refeições</h1>
+                    <div id="food-list">
+                    </div>
+                    <div id="register-box">
+                        <img id="register-img"src="" alt="">
+                        <div id="register-buttons">
+                            <button id="cancelBtn" class="cart-button" onclick="handleCancel()">Cancelar</button>
+                            <button id="confirmBtn" class="cart-button" onclick="handleConfirm()">Confirmar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>       
+        </div>
     </div>    
     </div>
     <script src="navbar.js"></script>

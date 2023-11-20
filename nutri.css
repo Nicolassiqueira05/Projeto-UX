@@ -1,0 +1,140 @@
+@media screen and (min-width: 0px) {
+    #pedidos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    #register{
+        height: 460px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid rgb(189, 189, 189);
+        border-radius: 10px;
+    }
+    #products{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 28%;
+        text-align: center;
+    }
+    .product-image{
+        height: 100px;
+        width: 100px;
+    }
+    .product-name{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    #cart-items{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    #cart-list{
+        height: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .list-item{
+        font-size: 20px;
+        margin: 10px;
+    }
+    #food-list{
+        height: 50%;
+        width: 100%;
+        border: 2px solid rgb(179, 179, 179);
+        border-radius: 10px;
+    }
+    #register-box{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    #register-buttons{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .cart-button{
+        height: 32px;
+        width: 130px;   
+        border: 0;
+        border-radius: 10px;
+        color: white;
+    }
+    #cancelBtn{
+        background-color: #F23E3E;
+    }
+    #confirmBtn{
+        background-color: #50D434;
+    }
+    #cancelBtn:hover{
+        background-color: #da1b1b;
+    }
+    #confirmBtn:hover{
+        background-color: #3bc520;
+    }
+    #checked{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #checked-icon{
+        width:120px;
+        height: 120px;
+    }
+    #checked-text{
+        font-size: 48px;
+        font-weight: bold;
+        color: #55C000;
+    }
+    #register-img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    #pedidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .product-image{
+        height: 76px;
+        width: 76px;
+    }
+    .product-name{
+        font-size: 14px;
+    }
+}

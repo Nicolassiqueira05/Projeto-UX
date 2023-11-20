@@ -20,7 +20,7 @@ function autoOpen(){
     closeBtn.style.display = "none"
 }
 function autoClose() {
-    navbar.style.diplay = "none"
+    navbar.style.display = "none"
     openBtn.style.display = "flex"
     closeBtn.style.display = "flex"
 }

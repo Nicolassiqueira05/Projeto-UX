@@ -11,7 +11,9 @@
         width: 100%;
         margin: 40px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     #search-input{
         height: 30px;
@@ -46,6 +48,9 @@
     }
     .result-item{
         width: 15%;
+    }
+    #fortes-logo{
+        width: 400px;
     }
 }
 @media screen and (max-width: 1449px) {
@@ -101,6 +106,9 @@
         max-width: 10%;
         font-size: 12px;
         margin: 10px;
+    }
+    #fortes-logo{
+        width: 80vw;
     }
 }
 @media screen and (max-width: 550px) {
