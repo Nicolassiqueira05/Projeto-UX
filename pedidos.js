@@ -36,4 +36,5 @@ function handleCancel(){
 }
 function handleConfirm(){
     screen.innerHTML = "</div><div id='checked'><img id='checked-icon' src='img/Checked.png'><h1 id='checked-text'>Pedido realizado com sucesso</h1></div>"
+    setTimeout(() =>{screen.innerHTML = baseScreen}, 5000)
 }
