@@ -6,12 +6,20 @@ const ls = localStorage
 
 let contas = [
     {
-        user: "nicolas",
-        password: "kaliu",
+        user: "teste",
+        password: "teste",
     },
     {
-        user: "caua",
-        password: "327",
+        user: "Teste",
+        password: "teste",
+    },
+    {
+        user: "teste",
+        password: "Teste",
+    },
+    {
+        user: "Teste",
+        password: "Teste",
     }
 ]
 
@@ -58,9 +66,10 @@ function login({user, password}){
     }
 
     if (loginState[0] == false){
-        window.alert("Usuário não encontrado")
+        window.alert("Usuário não encontrado ")
+        window.alert("Tente Usuário e Senha 'teste'")
     }else if(loginState[0] == true && loginState[1] == false){
-        window.alert("Senha incorreta")
+        window.alert("Tente Usuário e Senha 'teste'")
     }else if(loginState[0] == true && loginState[1] == true){
         window.location.href = "./dashboard.html"
     }
