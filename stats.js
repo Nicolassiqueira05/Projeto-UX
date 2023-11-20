@@ -23,8 +23,15 @@ class Worker {
 const workers = []
 workers.push(new Worker("Rafael Santos", "Gestor", "3256", "Sim", "20", "7", "#15267"))
 workers.push(new Worker("Lucas Silva", "Ala B", "4502", "Sim", "10", "13", "#15275"))
-workers.push(new Worker("Lucas Almeida", "Ala A", "3257", "Sim", "15", "24", "#15150"))
-workers.push(new Worker("Guilherme Oliveira", "Ala C", "4057", "Não", "5", "12", "#15783"))
+workers.push(new Worker("Lucas Almeida", "Ala A", "3256", "Sim", "15", "24", "#15150"))
+workers.push(new Worker("Guilherme Oliveira", "Ala C", "4502", "Não", "5", "13", "#15275"))
+workers.push(new Worker("Matheus Lima", "Ala B", "4502", "Não", "5", "13", "#15275"))
+workers.push(new Worker("Camila Costa", "Gestor", "3256", "Não", "14", "7", "#15267"))
+workers.push(new Worker("Bianca Martins", "Ala B", "4502", "Sim", "0", "13", "#15267"))
+workers.push(new Worker("Felipe Lima", "Ala C", "3256", "Sim", "40", "2", "#15150"))
+workers.push(new Worker("Marcos Silva", "Ala B", "4502", "Sim", "12", "8", "#15267"))
+workers.push(new Worker("Thiago Oliveira", "Ala A", "4502", "Não", "4", "15", "#15150"))
+
 
 for (let i = 0; i < workers.length; i++) { 
     document.querySelector("#result-list").innerHTML += workers[i].workerTag()

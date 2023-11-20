@@ -35,7 +35,7 @@
     }
     .product-image{
         height: 100px;
-        width: 100px;
+        width: 125px;
     }
     .product-name{
         font-size: 24px;
@@ -116,8 +116,8 @@
         color: #55C000;
     }
     #register-img{
-        height: 100px;
-        width: 100px;
+        height: 30px;
+        width: 30px;   
     }
 }
 
