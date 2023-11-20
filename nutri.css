@@ -117,8 +117,11 @@
     }
     #register-img{
         height: 30px;
-        width: 30px;   
+        width: 30px;
+        padding-top: 30px;
+        padding-left: 30px;   
     }
+
 }
 
 @media screen and (max-width: 901px) {

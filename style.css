@@ -30,11 +30,11 @@
     #logo{
         height: 90vh;
         width: 35vw;
-        border-right: 5px solid black;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 10%;
     }
     
     #fortes-box{
