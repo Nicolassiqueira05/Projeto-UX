@@ -1,5 +1,7 @@
 let list = document.querySelector("#cart-list")
 let screen = document.querySelector("#content-main")
+let content = document.querySelector("#content-screen")
+const baseContent = content.innerHTML
 const baseScreen = screen.innerHTML
 let cartList = []
 
@@ -36,5 +38,5 @@ function handleCancel(){
 }
 function handleConfirm(){
     screen.innerHTML = "</div><div id='checked'><img id='checked-icon' src='img/Checked.png'><h1 id='checked-text'>Pedido realizado com sucesso</h1></div>"
-    setTimeout(() =>{screen.innerHTML = baseScreen}, 5000)
+    setTimeout(() =>{screen.innerHTML = baseScreen}, 3000)
 }

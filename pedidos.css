@@ -207,7 +207,7 @@
     #content-screen{
         z-index: 0;
         position:absolute;
-        overflow: scroll;
+        overflow: hidden;
     }
     
 }
